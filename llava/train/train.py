@@ -888,7 +888,7 @@ def train(attn_implementation=None):
             cache_dir=training_args.cache_dir,
             model_max_length=training_args.model_max_length,
             padding_side="right",
-            use_fast=False,
+            use_fast=True,
         )
 
     if model_args.version == "v0":
